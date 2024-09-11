@@ -110,95 +110,165 @@
 // hello();
 // hello();
 
-function isvote(age){ 
-  if(age>=18){ 
-    console.log("you can vote");
+// function isvote(age){ 
+//   if(age>=18){ 
+//     console.log("you can vote");
     
-  } else{ 
-    console.log("you can`t vote");
+//   } else{ 
+//     console.log("you can`t vote");
     
-  }
-}
+//   }
+// }
 
-function blood(age){
-  if (age>18 && age<60) {
-    console.log("you can donete blood");
-    isvote(age)
+// function blood(age){
+//   if (age>18 && age<60) {
+//     console.log("you can donete blood");
+//     isvote(age)
     
-  }
-  else{
-    console.log("you can not donete blood");
-    isvote(age)
+//   }
+//   else{
+//     console.log("you can not donete blood");
+//     isvote(age)
     
-  }
-}
+//   }
+// }
 
-blood(17);
+// blood(17);
 
-function add(a,b){ 
-  console.log(a+b);
+// function add(a,b){ 
+//   console.log(a+b);
   
-}
+// }
 
-add(12,43)
-add(12,43)
-add(12,43)
+// add(12,43)
+// add(12,43)
+// add(12,43)
 
 
-function holl(l,w,c){
-   var area= l*w;
-   var cost = area*c;
-   console.log("your holl cost is " + cost);
+// function holl(l,w,c){
+//    var area= l*w;
+//    var cost = area*c;
+//    console.log("your holl cost is " + cost);
    
-}
-holl(25,95,25)
+// }
+// holl(25,95,25)
 
-function abhianv(num) {
-  var squer = num*num ;
-  console.log("shidhant"+num + "is"+squer );
+// function abhianv(num) {
+//   var squer = num*num ;
+//   console.log("shidhant"+num + "is"+squer );
   
   
-}
-abhianv(55)
+// }
+// abhianv(55)
 
-function evanOrodd(num) {
+// function evanOrodd(num) {
 
-  if (num%2==0) {
+//   if (num%2==0) {
 
-    console.log('number is evan');
+//     console.log('number is evan');
     
     
-  }
-  else{
-    console.log('number is odd');
+//   }
+//   else{
+//     console.log('number is odd');
     
-  }
-}
-evanOrodd(26)
+//   }
+// }
+// evanOrodd(26)
 
-function bro(num) {
+// function bro(num) {
  
   
-  if (num%10 ==0) {
-    console.log('number is divsebal by 10');
+//   if (num%10 ==0) {
+//     console.log('number is divsebal by 10');
     
     
-  }
-  else{
-    console.log("number is not divsebal by 10");
+//   }
+//   else{
+//     console.log("number is not divsebal by 10");
     
-  }
-}
-bro(100)
+//   }
+// }
+// bro(100)
 
-function name(num) {
-for(var bar = 0;bar<=30;bar++){
-  if(bar%5==0){
-    console.log(bar);
+// function name(num) {
+// for(var bar = 0;bar<=30;bar++){
+//   if(bar%5==0){
+//     console.log(bar);
     
-  }
-}
+//   }
+// }
   
-}
-name();
+// }
+// name();
 
+var head = document.getElementById("HEADING");
+// console.log(head);
+head.innerHTML = "NAMASTE"
+
+// fetch('https://jsonplaceholder.typicode.com/todos/')
+//      .then(responce => responce.json())
+//      .then(json => { 
+//           const table = document.getElementById("table");
+//           console.log(table);
+//         json.forEach(data => {
+//             const newrow = document.createElement("tr");
+//             const id = document.createElement("td");
+//             const userId = document.createElement("td");
+//             const title = document.createElement("td");
+//             id.textContent = data.id;
+//             userId.textContent = data.userId;
+//           title.textContent = data.title;
+//           newrow.appendChild(id);
+//           newrow.appendChild(title);
+//           newrow.appendChild(userId);
+//           table.appendChild(newrow);
+//           console.log(data);
+//           head.innerHTML = json.title;
+//           console.log(json.title);
+//           head.innerHTML = json.userId;
+//           head.innerHTML = json.id;
+       
+
+//         });
+     
+      
+//      })
+     
+  // fetch('https://jsonplaceholder.typicode.com/todos/')
+  // .then(responce =>
+  //     responce.json()
+
+  //   )
+  // .then(datas => { 
+  //   const table = document.querySelector("table");
+  //     datas.forEach(data => {
+  //       const newrow = document.createElement("tr")
+
+  //       const id = document.createElement("td")
+  //       id.textContent = data.id;
+  //       const userId = document.createElement("td")
+  //       userId.textContent = data.userId;
+  //       const title = document.createElement("td")
+  //       title.textContent = data.title;
+  //       newrow.appendChild(id)
+  //       newrow.appendChild(title)
+  //       newrow.appendChild(userId)
+  //       table.appendChild(newrow)
+
+      
+  //   });
+  // }
+
+  // );
+
+
+
+  const btn = document.getElementById('btn')
+  console.log(btn);
+   btn.addEventListener("mouseover", () =>{ 
+    const title = document.getElementById('th')
+    console.log(title);
+    title.innerHTML = "siddhant"
+
+   })
